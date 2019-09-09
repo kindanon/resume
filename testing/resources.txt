@@ -1,5 +1,0 @@
-https://mdbootstrap.com/docs/jquery/css/parallax/
-https://www.webnots.com/how-to-create-full-width-parallax-page-with-bootstrap-4-jumbotron/
-https://onepagelove.com/movement-of-data
-https://startbootstrap.com/previews/scrolling-nav/
-https://mobirise.com/parallax-scrolling/
