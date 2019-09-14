@@ -1,0 +1,46 @@
+.pent{
+    border: 1px solid black;
+}
+
+.testing{
+    border:1px solid green;
+    padding: 150px;
+}
+
+.navbar-custom{  
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.powerlevel{  
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-inverse .navbar-toggler-icon{
+    padding: 30px !important;
+  }
+
+.nav-padding{
+    padding: 20px;
+}
+
+.bg{
+    background-image: url("../resources/tile-bg.png"), url("../resources/space.jpg");
+    background-position: center, cover;
+    background-size: 2.5rem, cover;
+    height: 100%;
+}
+.content{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.jumbotron{
+    position:relative;
+    overflow:hidden;
+}
