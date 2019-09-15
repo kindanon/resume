@@ -4,7 +4,7 @@
 
 .testing{
     border:1px solid green;
-    padding: 150px;
+    padding: 250px;
 }
 
 .navbar-custom{  
@@ -15,10 +15,21 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.powerlevel{  
+.powerlevel-btn{  
     font-size: 1rem;
     letter-spacing: .05rem;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.powerlevel-svg{
+    width: 100%;
+    height: 20rem;
+}
+
+.powerlevel-svg-int{
+    margin: auto;
+    display: block; 
+    padding: 2.5rem; 
 }
 
 .navbar-inverse .navbar-toggler-icon{
@@ -30,9 +41,10 @@
 }
 
 .bg{
+    
     background-image: url("../resources/tile-bg.png"), url("../resources/space.jpg");
     background-position: center, cover;
-    background-size: 2.5rem, cover;
+    background-size: 4rem, cover;
     height: 100%;
 }
 .content{
