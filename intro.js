@@ -1,6 +1,6 @@
 var timeControlEl = document.querySelector('.parent');
 var timeCursorEl = document.querySelector('.profile-pic');
-
+var width = window.innerWidth;
 var windowHeight = window.innerHeight;
 var scrollAnim;
 
@@ -20,9 +20,9 @@ var timelineAnimation = anime.timeline({
         targets: timeCursorEl,
         translateZ: 0,
         keyframes: [
-            { translateY: [-24, 0], duration: 100, easing: 'easeInQuad' },
-            { translateX: 1080, duration: 1500 },
-            { translateY: -24, duration: 100, easing: 'easeOutQuad' }
+           // { translateY: [-24, 0], duration: 100, easing: 'easeInQuad' },
+            { translateX: width-200, duration: 3500 },
+           // { translateY: -24, duration: 100, easing: 'easeOutQuad' }
         ],
         duration: 1500
     }, -100)
