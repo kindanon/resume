@@ -50,3 +50,19 @@ isElementInViewport(timeCursorEl, function (el, entry) {
 }, function (el, entry) {
     controlAnimationCanMove = false;
 }, '50px');
+
+isElementInViewport(left, function (el, entry) {
+    windowHeight = window.innerHeight;
+    controlAnimationCanMove = true;
+    moveControlAnimation();
+}, function (el, entry) {
+    controlAnimationCanMove = false;
+}, '50px');
+
+isElementInViewport(right, function (el, entry) {
+    windowHeight = window.innerHeight;
+    controlAnimationCanMove = true;
+    moveControlAnimation();
+}, function (el, entry) {
+    controlAnimationCanMove = false;
+}, '50px');
