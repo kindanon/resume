@@ -142,3 +142,17 @@ function fitElementToParent(el, padding, exception) {
     resize();
     window.addEventListener('resize', resize);
 }
+
+var morph = anime({
+    targets: '.pent',
+    points: [
+        //  d: [
+        // { value: 'M15.6,18.6 4.3,18.6 0.8,7.9 10.0,1.3 19.1,7.9z' },
+        // { value: 'M17.6,20.6 6.3,20.6 2.8,9.9 12.0,3.3 21.1,9.9z' },
+        { value: '15.6,18.6 4.3,18.6 0.8,7.9 10.0,1.3 19.1,7.9' },
+        { value: '17.6,20.6 6.3,20.6 2.8,9.9 12.0,3.3 21.1,9.9' },
+    ],
+    easing: 'easeOutQuad',
+    duration: 2000,
+    loop: false
+});
