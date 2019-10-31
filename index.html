@@ -1,106 +1,45 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
+    <!-- BOOTSTRAP IMPORTS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!-- Custom CSS-->
-    <!-- link rel="stylesheet" href="css/custom.css"> -->
+    <!-- CUSTOM IMPORTS -->
     <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>MAIN SITE</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!--<div class="jumbotron jumbotron-fluid bg">where is it</div> -->
-    <!-- Background -->
-    <div class="bg">where is it
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar-custom py-0 py-md-0" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse"
-                                href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse"
-                                href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse"
-                                href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="nav-padding"></div>
+<body class="text-center">
+    
+    <!-- cover -->
+    <div class="align-content-center jumbotron-fluid c_cover">
+       
+        <div class="c_img">image here</div>
 
-        <section id="landing">landing<br>
-            <div class="container">
-                <div class="row">
-                    <button class="btn col-sm btn-outline-primary powerlevel-btn">Stuff</button>
-                    <button class="btn col-sm btn-outline-primary powerlevel-btn">Stuff</button>
-                    <button class="btn col-sm btn-outline-primary powerlevel-btn">Stuff</button>
-                </div>
-                <div class="powerlevel-svg">
-                    <!-- <svg class="powerlevel-svg-int" height=100% viewBox="0 0 140 140">
-                        <polygon class="polymorph" preserveAspectRatio="xMidYMin" stroke-width="1" stroke=green
-                            points="70 0 136.574 48.369 111.145 126.631 28.855 126.631 3.426 48.369"></polygon>
-                    </svg> -->
-                </div>
-            </div>
-            <div class="testing"></div>
-        </section>
-
-        <section id="me">
-            me
-            <div class="testing"></div>
-        </section>
-
-        <section id="experience">
-            exp
-            <div class="testing"></div>
-        </section>
-
-        <section id="contact">
-            cont
-            <div class="testing"></div>
-        </section>
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-
-        <script src="node_modules/animejs/lib/anime.min.js"></script>
-        <!-- my js-->
-        <script src="js/scripts.js"></script>
-
+        <div class="c_font">i make stuff</div>
     </div>
-    <script>
-        //there used to be var morph here
-    </script>
 
+    <!-- buttons -->
+    <div class="row">
+        <div class="col-sm">
+            <button type="button" class="btn shadow-sm waves-effect waves-light c_buttons" onclick="loading('education.html');">button1</button>
+            <button type="button" class="btn shadow-sm waves-effect waves-light c_buttons" onclick="loading('experience.html');">button2</button>
+            <button type="button" class="btn shadow-sm waves-effect waves-light c_buttons" onclick="loading('personal.html');">button3</button>
+            <button type="button" class="btn shadow-sm waves-effect waves-light c_buttons" onclick="loading('education.html');">button4</button>
+        </div>
+    </div>
+
+    <!-- loading zone -->
+    <div class="jumbotron" id="loading_zone"></div>
+    
+    <!-- BOOTSTRAP IMPORTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM IMPORTS -->
+    <script src="scripts.js"></script>
 </body>
-
 </html>
