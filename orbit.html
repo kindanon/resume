@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" ></script>
+<style>
+.parent{
+	width: 200px; 
+	height: 200px; 
+	outline: 1px solid black;
+}
+
+.planet{
+	position: relative;
+	z-index: 1;
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+	
+
+	<div class="motion parent">
+		
+		<svg class="system1" width="100%" height="100%">
+			<circle class="orbit1"  cx="50%" cy="50%" r="25%" stroke-width="1" stroke="black" fill="none" /> 
+			<circle class="el planet1" cx="25%" cy="25%" r="2%" stroke-width="1" stroke="green" fill="green" /> 
+		</svg>
+	</div>
+
+<script>
+var path = anime.path('.motion circle');
+
+anime({
+  targets: '.motion .el',
+  translateX: path('x'),
+  translateY: path('y'),
+  rotate: path('angle'),
+  easing: 'linear',
+  duration: 5000,
+  loop: true
+});
+
+</script>
+</body>
+</html>
