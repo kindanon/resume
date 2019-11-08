@@ -3,87 +3,55 @@
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" ></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-	background-color: rgba(33, 33, 33, 255)
-}
-
-.parent{
-	width: 99vw;
-	height: 98vh; 
-	margin: 0 auto;
-}
-
-.superclass{
-	background-color: rgba(33, 33, 33, 255);
-	text-align: center;
-}
-
-.orbits{
-	stroke: grey;
-	stroke-width: 1px;
-	fill: none;
-}
-
-.homeText{
-	font-family: 'Dancing Script', cursive;
-	font-size: 5rem;
-	background-image: linear-gradient(#e66465, #9198e5);
-	-webkit-text-fill-color: transparent;
-	color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-origin: content-box;
-	padding: 1rem;
-	text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
-}
-
-.header{
-	font-size: 10rem;
-}
-
-.bottomT{
-	padding-bottom: 5rem;
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" ></script>
 	
-}
-</style>
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="custom.css" />
+
 </head>
 
-<body>
+<body><div>
+<div id="particles-js"></div>
+<div>&nbsp</div>
+<strong class="header homeText">Welcome to my Galaxy</strong>
+	
 
-<div class="superclass">
-	<div>&nbsp</div>
-	<strong class="header homeText">Welcome to my Galaxy</strong>
-	
-	<div class="motion parent">
-		<svg class="system1" width="100%" height="85%" viewbox="0 0 500 500">
-				
-			<!-- <filter id="image" x="0%" y="0%" width="100%" height="100%"><feImage xlink:href="saturn.png"/></filter > -->
-			<circle class="orbit1 orbits" cx="50%" cy="50%" r="25%"/>
-			<!-- <circle class="planet1" cx="25%" cy="25%" r="3%" stroke-width="1" stroke="green" filter="url(#image)" /> -->
-			
-			<circle class="orbit2 orbits" cx="50%" cy="50%" r="45%"/> 
-			<circle class="planet2" cx="45%" cy="45%" r="3%" stroke-width="1" stroke="green" fill="green" /> 
 
-			<circle class="orbit3 orbits" cx="50%" cy="50%" r="15%" fill="none"/> 
-			<circle class="planet3" cx="15%" cy="15%" r="3%" stroke-width="1" stroke="green" fill="green" /> 
-		</svg>
-	</div>
-	
-	<strong class="bottomT homeText">Touch the planets</strong>
-	
-</div>
+<div class="solarSystem">
+	<svg class="systems" width="100%" height="85%" viewbox="0 0 500 500">
+		
+		<defs>
+			<pattern id="image" height="100%" width="100%" viewBox="0 0 689 689">
+				<image xlink:href="planetSlime.png"/>
+			</pattern>
+		</defs>
+		
+		<filter id="image2" x="0%" y="0%" width="100%" height="100%"><feImage xlink:href="planetSlime.png"/></filter>
+
+		<g class="system">	
+			<circle class="orbit1 orbits" cx="50%" cy="50%" r="15%"/>
+			<circle class="planet1" cx="15%" cy="15%" r="4%" stroke-width="1" stroke="green" fill="url(#image)"/>	
+		</g>
+		
+		<g>		
+			<circle class="orbit2 orbits" cx="50%" cy="50%" r="30%"/> 
+			<circle class="planet2" cx="30%" cy="30%" r="6%" stroke-width="1" stroke="green" fill="green" /> 
+		</g>
+
+		<g>	
+		<circle class="orbit3 orbits" cx="50%" cy="50%" r="45%" fill="none"/> 
+		<circle class="planet3" cx="45%" cy="45%" r="5%" stroke-width="1" stroke="green" fill="green" /> 
+		</g>
+	</svg>
+</div>	
+
+<strong class="bottomT homeText">Touch the planets</strong>
 
 <script>
 function orbits(orbit, planet, dura){
-
-var path = anime.path('.motion .' + orbit);
-
-anime({
-  targets: '.motion .' + planet,
+var path = anime.path('.solarSystem .' + orbit);
+var orbits = anime({
+  targets: '.solarSystem .' + planet,
   translateX: path('x'),
   translateY: path('y'),
   rotate: path('angle'),
@@ -91,12 +59,17 @@ anime({
   duration: dura,
   loop: true
 });
+//orbits.reverse();
 }
 
-orbits('orbit1', 'planet1', 60000);
-orbits('orbit2', 'planet2', 30000);
-orbits('orbit3', 'planet3', 25000);
+particlesJS.load('particles-js', '/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+orbits('orbit1', 'planet1', 25000);
+orbits('orbit2', 'planet2', 75000);
+orbits('orbit3', 'planet3', 60000);
 
 </script>
-</body>
+</div></body>
 </html>
