@@ -25,7 +25,8 @@ body{
 
 .solarSystem{
 	width: 98vw;
-	height: 93vh; 
+    height: 93vh; 
+    max-height: 105rem;
 	margin: 0 auto;
 }
 
@@ -64,8 +65,8 @@ body{
 }
 
 #particles-js {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: -10;
 }
