@@ -24,22 +24,35 @@ body{
 }
 
 .solarSystem{
-	width: 98vw;
-    height: 93vh; 
-    max-height: 105rem;
-	margin: 0 auto;
+  width: 98vw;
+  height: 98vw;
+  max-width: 60rem;
+  max-height: 60rem;
+  margin: 0 auto;
+  position: relative;
 }
 
-.systems{
-    color: white;
+.orbitContainer{
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
-
 
 .orbits{
 	stroke: grey;
     stroke-dasharray: 1,5;
     stroke-width: 1px;
 	fill: none;
+}
+
+.planets{
+  border-radius: 50%;
+  background-color: green;
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: -5%;
+  left: -5%;
 }
 
 .homeText{
