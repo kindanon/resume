@@ -55,13 +55,10 @@ body{
   left: -5%;
 }
 
-
-.homeText{
+.titleText{
 	font-family: 'Dancing Script', cursive;
-	font-size: 5rem;
   background-image: linear-gradient(135deg, #e66465, #9198e5);
   display: block;
-
   font-weight:bold;
   -webkit-text-fill-color: transparent;
 	color: transparent;
@@ -71,13 +68,17 @@ body{
 	text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
 }
 
-.header{
-	font-size: 10rem;
+.topTitle{
+	font-size: 18vw;
 }
 
-.bottomT{
-	padding-bottom: 5rem;
-	background-origin: content-box;
+.botTitle{
+	font-size: 10vw;
+}
+
+@media (min-width: 850px) {
+  .topTitle{font-size: 10rem;}
+  .botTitle{font-size: 5rem;}
 }
 
 #particles-js {

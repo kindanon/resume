@@ -77,24 +77,26 @@ body{
 </div>	
 
 <script>
-function orbits(orbit, planet, dura){
-var path = anime.path('.solarSystem .' + orbit);
-var orbits = anime({
-  targets: '.solarSystem .' + planet,
-  translateX: path('x'),
-  translateY: path('y'),
-  rotate: path('angle'),
-  easing: 'linear',
-  duration: dura,
-  loop: true
-});
-//orbits.reverse();
-}
-
-var system1 = orbits('orbit1', 'planet1', 25000);
-var system2 = orbits('orbit2', 'planet2', 75000);
-var system3 = orbits('orbit3', 'planet3', 55000);
-
-</script>
+    function orbits(orbit, planet, dura){
+    var path = anime.path('.solarSystem .' + orbit);
+    var orbits = anime({
+      targets: '.solarSystem .' + planet,
+      translateX: path('x'),
+      translateY: path('y'),
+      rotate: path('angle'),
+      easing: 'linear',
+      duration: dura,
+      loop: true
+    });
+    }
+    
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+    window.onload = function() {
+    var system1 = orbits('orbit1', 'planet1', 25000);
+    var system2 = orbits('orbit2', 'planet2', 75000);
+    var system3 = orbits('orbit3', 'planet3', 60000);
+    </script>
 </div></body>
 </html>
