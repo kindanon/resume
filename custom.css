@@ -1,28 +1,9 @@
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgba(23, 23, 23, 255);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-
-
 body{
     background-color: rgba(33, 33, 33, 255);
     text-align: center;
 }
 
+/*main page*/
 .solarSystem{
   width: 98vw;
   height: 98vw;
@@ -32,6 +13,7 @@ body{
   position: relative;
 }
 
+/*orbit svgs*/
 .orbitContainer{
   width: 100%;
   height: 100%;
@@ -45,16 +27,30 @@ body{
 	fill: none;
 }
 
+/*planets*/
 .planets{
   border-radius: 50%;
-  background-color: green;
   width: 10%;
   height: 10%;
   position: absolute;
   top: -5%;
   left: -5%;
+  -moz-box-shadow:    0px 0px 9px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.99);
+  box-shadow:         0px 0px 9px rgba(0, 0, 0, 0.99);
 }
 
+#planet1{
+  background-image: linear-gradient(#d68b00, #fffc2e);
+}
+#planet2{
+  background-image: linear-gradient(#04db04, #0015ff);
+}
+#planet3{
+  background-image: linear-gradient(#d30404, #ffbb00);
+}
+
+/*main text*/
 .titleText{
 	font-family: 'Dancing Script', cursive;
   background-image: linear-gradient(135deg, #e66465, #9198e5);
@@ -65,7 +61,8 @@ body{
 	-webkit-background-clip: text;
 	background-clip: text;
 	padding: 1rem;
-	text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
+  /*text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);*/
+  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
 }
 
 .topTitle{
@@ -80,6 +77,62 @@ body{
   .topTitle{font-size: 10rem;}
   .botTitle{font-size: 5rem;}
 }
+
+/*modals*/
+/*.modal{
+  border-radius: 50%;
+  width: 98vw;
+  height: 98vw;
+}*/
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  border-radius: 50%;
+  position: relative;
+
+  top: 33vh;
+  width: 98vw;
+  height: 98vw;
+  max-width: 60rem;
+  max-height: 60rem;
+  background-image: linear-gradient(#d68b00, #fffc2e);
+  background-color: #fefefe;
+ 
+
+
+  
+}
+
+/*#planet1m .modal-content{
+  position: relative;
+  display: flex;
+  width: 98vw;
+  height: 98vw;
+  background-image: linear-gradient(#d68b00, #fffc2e);
+}*/
+
+#planet2m .modal-content{
+  background-image: green;
+}
+
+#planet3m .modal-content{
+  background-image: blue;
+}
+
+::-webkit-scrollbar {width: .8rem;}
+::-webkit-scrollbar-track {background: transparent;}
+::-webkit-scrollbar-thumb {background: rgba(23, 23, 23, 255);}
+::-webkit-scrollbar-thumb:hover {background: #555;}
 
 #particles-js {
     width: 100vw;

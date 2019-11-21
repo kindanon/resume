@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="custom.css" />
 </head>
@@ -14,9 +17,9 @@
 
 <div class="solarSystem">
 	
-	<div class="planet1 planets"></div>
-    <div class="planet2 planets"></div> 
-    <div class="planet3 planets"></div>
+	<div id="planet1" class="planets" data-toggle="modal" data-target="#planet1m"></div>
+    <div id="planet2" class="planets" data-toggle="modal" data-target="#planet2m"></div> 
+    <div id="planet3" class="planets" data-toggle="modal" data-target="#planet3m"></div>
 
 	<svg class="orbitContainer" width="100%" height="100%" viewbox="0 0 100 100">
 		<defs>
@@ -25,25 +28,45 @@
 			</pattern>
 		</defs>
 
-		<path class="orbit1 orbits" d="M 35, 50 a 15,15 0 1,1 30,0 a 15,15 0 1,1 -30,0 Z"/>
-		<path class="orbit2 orbits" d="M 20, 50 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0 Z"/>
-		<path class="orbit3 orbits" d="M 05, 50 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0 Z"/>
+		<path id="orbit1" class="orbits" d="M 35, 50 a 15,15 0 1,1 30,0 a 15,15 0 1,1 -30,0 Z"/>
+		<path id="orbit2" class="orbits" d="M 20, 50 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0 Z"/>
+		<path id="orbit3" class="orbits" d="M 05, 50 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0 Z"/>
 	</svg>
 </div>
 
 <text class="botTitle titleText">Touch the planets</text>
+</div>
 <!-- end of home page -->
 
 <!-- modals -->
+<div id="planet1m" class="modal">
+	<div class="modal-content">
+		<p>hello world non bootstrap</p>
+	</div>
+</div>
 
+<div id="planet2m" class="modal">
+	<div class="modal-content">
+		<p>hello world non bootstrap</p>
+	</div>
+</div>
 
+<div id="planet3m" class="modal">
+	<div class="modal-content">
+		<p>hello world non bootstrap</p>
+	</div>
+</div>
 <!-- end of modals -->
 
 <!-- scripts -->
-
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- BOOTSTRAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" ></script>
 <script src="anime.min.js"></script>
 <script src="scripts.js"></script>
-</div></body>
+</body>
 </html>
