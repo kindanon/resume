@@ -19,13 +19,19 @@ body{
   height: 100%;
   z-index: -10;
 }
-
 .orbits{
 	stroke: grey;
-    stroke-dasharray: .25,1;
-    stroke-width: .25px;
-	fill: none;
+  stroke-dasharray: .25,1;
+  stroke-width: .02em;
+  fill: none;
 }
+/*
+.shadow{
+  stroke: black;
+  stroke-width: 2px;
+  filter: url('#dropshadow');
+}
+*/
 
 /*planets*/
 .planets{
@@ -39,15 +45,14 @@ body{
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.99);
   box-shadow:         0px 0px 9px rgba(0, 0, 0, 0.99);
 }
-
 #planet1{
-  background-image: linear-gradient(#d68b00, #fffc2e);
+  background: linear-gradient(#d68b00, #fffc2e);
 }
 #planet2{
-  background-image: linear-gradient(#04db04, #0015ff);
+  background: linear-gradient(#04db04, #0015ff);
 }
 #planet3{
-  background-image: linear-gradient(#d30404, #ffbb00);
+  background: linear-gradient(#d30404, #ffbb00);
 }
 
 /*main text*/
@@ -61,74 +66,55 @@ body{
 	-webkit-background-clip: text;
 	background-clip: text;
 	padding: 1rem;
-  /*text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);*/
   text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
 }
-
 .topTitle{
 	font-size: 18vw;
 }
-
 .botTitle{
 	font-size: 10vw;
 }
-
 @media (min-width: 850px) {
   .topTitle{font-size: 10rem;}
   .botTitle{font-size: 5rem;}
 }
 
 /*modals*/
-/*.modal{
-  border-radius: 50%;
-  width: 98vw;
-  height: 98vw;
-}*/
-
-.modal {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-  border-radius: 50%;
-  position: relative;
-
-  top: 33vh;
-  width: 98vw;
-  height: 98vw;
+.modal-dialog{
+  color: whitesmoke;
+  width: 85vw;
+  height: 85vw;
   max-width: 60rem;
   max-height: 60rem;
-  background-image: linear-gradient(#d68b00, #fffc2e);
-  background-color: #fefefe;
- 
-
-
-  
+  overflow-y: initial !important;
 }
-
-/*#planet1m .modal-content{
-  position: relative;
-  display: flex;
-  width: 98vw;
-  height: 98vw;
-  background-image: linear-gradient(#d68b00, #fffc2e);
-}*/
-
+.modal-content {
+  border-radius: 50%;
+  width: 85vw;
+  height: 85vw;
+  max-width: 60rem;
+  max-height: 60rem;
+}
+#planet1m .modal-content{
+  background: linear-gradient(#d68b00, #fffc2e) !important;
+}
 #planet2m .modal-content{
-  background-image: green;
+  background: linear-gradient(#3cff00, #4400ff) !important;
 }
-
 #planet3m .modal-content{
-  background-image: blue;
+  background: linear-gradient(#ff0000, #d9ff00) !important;
 }
+.modal-body{
+  overflow-y: auto;
+  transform:scaleY(1);
+}
+.modal-body img{
+  transform: skewY(20deg);
+  transform:scaleY(.05);
+}
+.modal-body::-webkit-scrollbar {width: 0}
 
+/*others*/
 ::-webkit-scrollbar {width: .8rem;}
 ::-webkit-scrollbar-track {background: transparent;}
 ::-webkit-scrollbar-thumb {background: rgba(23, 23, 23, 255);}

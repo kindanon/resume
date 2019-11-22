@@ -26,11 +26,21 @@
 			<pattern id="image" height="100%" width="100%" viewBox="0 0 689 689">
 				<image xlink:href="planetSlime.png"/>
 			</pattern>
+		
+			<filter id="dropshadow" x="-2" y="-2" width="200" height="200">
+				<feGaussianBlur  stdDeviation="1"/>
+			</filter>
 		</defs>
 
 		<path id="orbit1" class="orbits" d="M 35, 50 a 15,15 0 1,1 30,0 a 15,15 0 1,1 -30,0 Z"/>
 		<path id="orbit2" class="orbits" d="M 20, 50 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0 Z"/>
 		<path id="orbit3" class="orbits" d="M 05, 50 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0 Z"/>
+		
+		<!--
+		<path id="orbit1" class="orbits shadow" d="M 35, 50 a 15,15 0 1,1 30,0 a 15,15 0 1,1 -30,0 Z"/>
+		<path id="orbit2" class="orbits shadow" d="M 20, 50 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0 Z"/>
+		<path id="orbit3" class="orbits shadow" d="M 05, 50 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0 Z"/>
+		-->
 	</svg>
 </div>
 
@@ -39,21 +49,41 @@
 <!-- end of home page -->
 
 <!-- modals -->
-<div id="planet1m" class="modal">
-	<div class="modal-content">
-		<p>hello world non bootstrap</p>
+<div class="modal fade" id="planet1m" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-body">
+		just some testing text 
+		I will probalby laod this in using ajax or something
+		it seems inefficient to code all the text inth the webpage
+
+		<p>this is a paragraph.  im abliut t atdd another one</p>
+		<p> this is another paragraph</p>
+		<text> how about soem tguncg text </text>
+		<h1> and a header for good measutres</h1>
+		<img src="/favicon.ico"/>
+		</div>
+	  </div>
+	</div>
+</div>
+	
+<div class="modal fade" id="planet2m" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  	<div class="modal-content">
+			<div class="modal-body">
+				text
+			</div>
+	  	</div>
 	</div>
 </div>
 
-<div id="planet2m" class="modal">
-	<div class="modal-content">
-		<p>hello world non bootstrap</p>
-	</div>
-</div>
-
-<div id="planet3m" class="modal">
-	<div class="modal-content">
-		<p>hello world non bootstrap</p>
+<div class="modal fade" id="planet3m" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				text
+			</div>
+		</div>
 	</div>
 </div>
 <!-- end of modals -->
