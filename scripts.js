@@ -37,19 +37,20 @@ particlesJS.load('particles-js', 'particles.json', function() {
   });
 
 //homepage modals
-var modal1 = document.querySelector('#planet1m');
-var modal2 = document.querySelector('#planet2m');
-var modal3 = document.querySelector('#planet3m');
-
 var planet1 = document.querySelector('#planet1m');
 var planet2 = document.querySelector('#planet2m');
 var planet3 = document.querySelector('#planet3m');
 
-planet1.onclick = function(){modal1.style.display = "block";}
-window.onclick = function(event) {if (event.target == modal1) {modal1.style.display = "none";}}
+planet1.onclick = function(){planet1.style.display = "block";}
+window.onclick = function(event) {if (event.target != planet1.querySelector(".modal-text")) {
+    modal1.style.display = "none";
+    }else{
+        console.log(event.target);
+    }
+}
 
-planet2.onclick = function(){modal2.style.display = "block";}
-window.onclick = function(event) {if (event.target == modal2) {modal2.style.display = "none";}}
+planet2.onclick = function(){planet2.style.display = "block";}
+window.onclick = function(event) {if (event.target == planet2) {planet2.style.display = "none";}}
 
-planet3.onclick = function(){modal3.style.display = "block";}
-window.onclick = function(event) {if (event.target == modal3) {modal3.style.display = "none";}}
+planet3.onclick = function(){planet3.style.display = "block";}
+window.onclick = function(event) {if (event.target == planet3) {planet3.style.display = "none";}}

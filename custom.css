@@ -87,6 +87,7 @@ body{
   max-width: 60rem;
   max-height: 60rem;
   overflow-y: initial !important;
+  text-align: center;
 }
 .modal-content {
   border-radius: 50%;
@@ -94,19 +95,21 @@ body{
   height: 85vw;
   max-width: 60rem;
   max-height: 60rem;
+  text-align: center;
 }
 #planet1m .modal-content{
-  background: linear-gradient(#d68b00, #fffc2e) !important;
+  background: linear-gradient(#835500, #7e7c18) !important;
 }
 #planet2m .modal-content{
-  background: linear-gradient(#3cff00, #4400ff) !important;
+  background: linear-gradient(#1f8300, #25008b) !important;
 }
 #planet3m .modal-content{
-  background: linear-gradient(#ff0000, #d9ff00) !important;
+  background: linear-gradient(#8f0101, #788d01) !important;
 }
 .modal-body{
   overflow-y: auto;
   transform:scaleY(1);
+  text-align: center;
 }
 .modal-body img{
   transform: skewY(20deg);
@@ -125,4 +128,17 @@ body{
     height: 100vh;
     position: fixed;
     z-index: -10;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.modal-text{
+  display: inline-block; 
+  text-align: left;
+  max-width: 75%;
+  font-size: 16px;
 }
