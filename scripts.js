@@ -42,12 +42,7 @@ var planet2 = document.querySelector('#planet2m');
 var planet3 = document.querySelector('#planet3m');
 
 planet1.onclick = function(){planet1.style.display = "block";}
-window.onclick = function(event) {if (event.target != planet1.querySelector(".modal-text")) {
-    modal1.style.display = "none";
-    }else{
-        console.log(event.target);
-    }
-}
+planet1.onclick = function(event) {if (event.target == planet1) {planet1.style.display = "none";}}
 
 planet2.onclick = function(){planet2.style.display = "block";}
 window.onclick = function(event) {if (event.target == planet2) {planet2.style.display = "none";}}

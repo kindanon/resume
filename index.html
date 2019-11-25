@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- hello there -->
 <html>
 <head>
 	<!-- BOOTSTRAP -->
@@ -6,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	
+	<!-- others -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="custom.css" />
 </head>
 
-<body><div>
-<!-- home page -->
+<body><!-- home page --><div>
 <div id="particles-js"></div>
 
-<div>&nbsp</div>
 <text class="topTitle titleText">Welcome to my Galaxy</text>
 
 <div class="solarSystem">
@@ -35,6 +35,7 @@
 			</filter>
 		</defs>
 
+		<path id="star" class="stars" d="M 42.5,50 a 7.5,7.5 0 1,1 15,0 a 7.5,7.5 0 1,1 -15,0 Z"/>
 		<path id="orbit1" class="orbits" d="M 35, 50 a 15,15 0 1,1 30,0 a 15,15 0 1,1 -30,0 Z"/>
 		<path id="orbit2" class="orbits" d="M 20, 50 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0 Z"/>
 		<path id="orbit3" class="orbits" d="M 05, 50 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0 Z"/>
@@ -48,16 +49,15 @@
 </div>
 
 <text class="botTitle titleText">Touch the planets</text>
-</div>
-<!-- end of home page -->
+</div><!-- end of home page -->
 
-<!-- modals -->
+<!-- modals --><div>
 <div class="modal fade" id="planet1m" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 		  <div class="modal-content">
 			<div class="modal-body">
 				<div class="modal-text">
-				<h1><strong>My Education</strong></h1>
+					<h1><strong>My Education</strong></h1>
 					<p>B.A in Computer Science from Michigan Technological University</p>
 					<p>Graduation year : 2019</p>
 					<p>Overall GPA : 3.2</p>
@@ -72,7 +72,7 @@
 					<li>Team Programming, Scrum/Agile, Pair Programming</li>
 					<li>Linux/Bash, Git</li>
 					</ul>
-					<h3><br /> Husky Games Enterprise:</h3>
+					<h3>Husky Games Enterprise</h3>
 					<p>Participated in an enterprise centered around game development.&nbsp; Split into teams of 6, managed our own project for 2 semesters.</p>
 					<ul>
 					<li>Programmer &ndash; created control interface + menu systems + physics objects</li>
@@ -95,7 +95,41 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 	  	<div class="modal-content">
 			<div class="modal-body">
-				text
+				<div class="modal-text">
+					<h1><strong>Work Experience</strong></h1>
+					<h2><strong>Ford Motor Company - Software Engineer&nbsp;</strong></h2>
+					<ul>
+					<li>2019-Current</li>
+					</ul>
+					<p>Work with Global Track and Trace.&nbsp; Track vehicles &amp; their status through the build &amp; ship process.&nbsp; Using milestones from the plants &amp; carriers, track vehicles from creation to delivery to dealerships.&nbsp; Using this information, run analyses to find optimal paths the vehicles should take.&nbsp; When the vehicles are not moving as they should, detect this and alert relevant parties in real time.&nbsp; Manage systems to allow management to redirect the vehicle quickly and efficiently.</p>
+					<h3><strong>General Tasks</strong></h3>
+					<ul>
+					<li>Store and analyze routes to find optimal delivery paths.&nbsp;</li>
+					<li>Build systems to notify management when data says something wrong</li>
+					<li>Send mass texts &amp; emails with formatting based on user preference &amp; relevance</li>
+					</ul>
+					<h3><strong>Personal Tasks</strong></h3>
+					<ul>
+					<li>Build webpages for management to modify vehicles paths</li>
+					<li>Build webpages for management to see data analytics</li>
+					<li>Oversee general website design and layout</li>
+					<li>Build backend for storing user data, vehicle information</li>
+					<li>Build backend for sending out alerts (email &amp; text) to management</li>
+					<li>Oversee decommission of redundant software systems</li>
+					</ul>
+					<h3><strong>Technologies</strong></h3>
+					<ul>
+					<li>Java</li>
+					<li>HTML,CSS</li>
+					<li>JavaScript</li>
+					<li>SQL</li>
+					<li>Thymeleaf/Springboot</li>
+					</ul>
+					<h2><strong>Consumer's Energy - Internship</strong></h2>
+					<ul>
+					<li>2016</li>
+					</ul>
+				</div>
 			</div>
 	  	</div>
 	</div>
@@ -110,7 +144,7 @@
 		</div>
 	</div>
 </div>
-<!-- end of modals -->
+</div><!-- end of modals -->
 
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -119,6 +153,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+<!-- others -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" ></script>
 <script src="anime.min.js"></script>
 <script src="scripts.js"></script>

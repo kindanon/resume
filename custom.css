@@ -1,6 +1,28 @@
+/*
+hey man, don't look at another man's css ... we all do weird things to make it work
+*/
+
+/*others*/
 body{
-    background-color: rgba(33, 33, 33, 255);
-    text-align: center;
+  background-color: rgba(33, 33, 33, 255);
+  text-align: center;
+}
+ul {
+  display: inline-block;
+  text-align: left;
+  list-style-position: inside;
+}
+
+::-webkit-scrollbar {width: .8rem;}
+::-webkit-scrollbar-track {background: transparent;}
+::-webkit-scrollbar-thumb {background: rgba(23, 23, 23, 255);}
+::-webkit-scrollbar-thumb:hover {background: #555;}
+
+#particles-js {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
 }
 
 /*main page*/
@@ -11,6 +33,26 @@ body{
   max-height: 60rem;
   margin: 0 auto;
   position: relative;
+}
+
+/*main text*/
+.titleText{
+	font-family: 'Dancing Script', cursive;
+  background-image: linear-gradient(135deg, #e66465, #9198e5);
+  display: block;
+  font-weight:bold;
+  -webkit-text-fill-color: transparent;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	padding: 1rem;
+  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
+}
+.topTitle{font-size: 18vw;}
+.botTitle{font-size: 10vw;}
+@media (min-width: 850px) {
+  .topTitle{font-size: 10rem;}
+  .botTitle{font-size: 5rem;}
 }
 
 /*orbit svgs*/
@@ -45,38 +87,12 @@ body{
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.99);
   box-shadow:         0px 0px 9px rgba(0, 0, 0, 0.99);
 }
-#planet1{
-  background: linear-gradient(#d68b00, #fffc2e);
-}
-#planet2{
-  background: linear-gradient(#04db04, #0015ff);
-}
-#planet3{
-  background: linear-gradient(#d30404, #ffbb00);
-}
+#planet1{background: linear-gradient(#d68b00, #fffc2e);}
+#planet2{background: linear-gradient(#0084ff, #00ff55);}
+#planet3{background: linear-gradient(#d30404, #ffbb00);}
 
-/*main text*/
-.titleText{
-	font-family: 'Dancing Script', cursive;
-  background-image: linear-gradient(135deg, #e66465, #9198e5);
-  display: block;
-  font-weight:bold;
-  -webkit-text-fill-color: transparent;
-	color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	padding: 1rem;
-  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
-}
-.topTitle{
-	font-size: 18vw;
-}
-.botTitle{
-	font-size: 10vw;
-}
-@media (min-width: 850px) {
-  .topTitle{font-size: 10rem;}
-  .botTitle{font-size: 5rem;}
+.stars{
+  background: linear-gradient(white, blue);
 }
 
 /*modals*/
@@ -97,15 +113,9 @@ body{
   max-height: 60rem;
   text-align: center;
 }
-#planet1m .modal-content{
-  background: linear-gradient(#835500, #7e7c18) !important;
-}
-#planet2m .modal-content{
-  background: linear-gradient(#1f8300, #25008b) !important;
-}
-#planet3m .modal-content{
-  background: linear-gradient(#8f0101, #788d01) !important;
-}
+#planet1m .modal-content{background: linear-gradient(#835500, #7e7c18) !important;}
+#planet2m .modal-content{background: linear-gradient(#01498d, #018b2f) !important;}
+#planet3m .modal-content{background: linear-gradient(#8f0101, #788d01) !important;}
 .modal-body{
   overflow-y: auto;
   transform:scaleY(1);
@@ -116,26 +126,6 @@ body{
   transform:scaleY(.05);
 }
 .modal-body::-webkit-scrollbar {width: 0}
-
-/*others*/
-::-webkit-scrollbar {width: .8rem;}
-::-webkit-scrollbar-track {background: transparent;}
-::-webkit-scrollbar-thumb {background: rgba(23, 23, 23, 255);}
-::-webkit-scrollbar-thumb:hover {background: #555;}
-
-#particles-js {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -10;
-}
-
-ul {
-  display: inline-block;
-  text-align: left;
-  list-style-position: inside;
-}
-
 .modal-text{
   display: inline-block; 
   text-align: left;
