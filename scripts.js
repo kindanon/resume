@@ -2,6 +2,7 @@
 var system1;
 var system2;
 var system3;
+var system0;
 
 function orbits(orbit, planet, dura){
     var path = anime.path('.solarSystem #' + orbit);
@@ -20,8 +21,10 @@ function orbits(orbit, planet, dura){
     system1 = orbits('orbit1', 'planet1', 25000);
     system2 = orbits('orbit2', 'planet2', 90000);
     system3 = orbits('orbit3', 'planet3', 60000);
+    system0 = orbits('orbit0', 'star', 10);
     }
     
+
     document.querySelector('#planet1').onmouseover  = function(){system1.pause();}
     document.querySelector('#planet1').onmouseleave = function(){system1.play();}
 

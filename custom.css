@@ -87,7 +87,8 @@ ul {
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.99);
   box-shadow:         0px 0px 9px rgba(0, 0, 0, 0.99);
 }
-#planet1{background: linear-gradient(#d68b00, #fffc2e);}
+#star{background: linear-gradient(#d68b00, #fffc2e);}
+#planet1{background: linear-gradient(#ab2eff, #ff00aa);}
 #planet2{background: linear-gradient(#0084ff, #00ff55);}
 #planet3{background: linear-gradient(#d30404, #ffbb00);}
 
@@ -113,7 +114,7 @@ ul {
   max-height: 60rem;
   text-align: center;
 }
-#planet1m .modal-content{background: linear-gradient(#835500, #7e7c18) !important;}
+#planet1m .modal-content{background: linear-gradient(#5d198a, #8b015d) !important;}
 #planet2m .modal-content{background: linear-gradient(#01498d, #018b2f) !important;}
 #planet3m .modal-content{background: linear-gradient(#8f0101, #788d01) !important;}
 .modal-body{
