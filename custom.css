@@ -104,6 +104,7 @@ ul {
   max-height: 50rem;
   text-align: center;
   margin: auto auto;
+  position: absolute;
 }
 #planet1m .modal-content{background: linear-gradient(#5d198a, #8b015d) !important;}
 #planet2m .modal-content{background: linear-gradient(#01498d, #018b2f) !important;}
@@ -111,9 +112,13 @@ ul {
 
 .modal-body{  
   text-align: center;
+  padding: 0rem;
+  font-size: 14px;
+  overflow-y: auto;
 }
 .modal-text{
   text-align: left;
+  overflow-y: auto;
 }
 
 .modal::-webkit-scrollbar {width: 0}
