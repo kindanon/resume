@@ -21,7 +21,7 @@ function orbits(orbit, planet, dura){
     system1 = orbits('orbit1', 'planet1', 25000);
     system2 = orbits('orbit2', 'planet2', 90000);
     system3 = orbits('orbit3', 'planet3', 60000);
-    system0 = orbits('orbit0', 'star', 10);
+    system0 = orbits('orbit0', 'star', 1000);
     }
     
 
@@ -43,6 +43,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 var planet1 = document.querySelector('#planet1m');
 var planet2 = document.querySelector('#planet2m');
 var planet3 = document.querySelector('#planet3m');
+var star = document.querySelector('#starm');
 
 planet1.onclick = function(){planet1.style.display = "block";}
 planet1.onclick = function(event) {if (event.target == planet1) {planet1.style.display = "none";}}
@@ -52,3 +53,6 @@ window.onclick = function(event) {if (event.target == planet2) {planet2.style.di
 
 planet3.onclick = function(){planet3.style.display = "block";}
 window.onclick = function(event) {if (event.target == planet3) {planet3.style.display = "none";}}
+
+star.onclick = function(){star.style.display = "block";}
+window.onclick = function(event) {if (event.target == star) {star.style.display = "none";}}
