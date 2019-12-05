@@ -38,21 +38,3 @@ function orbits(orbit, planet, dura){
 particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
-
-//homepage modals
-var planet1 = document.querySelector('#planet1m');
-var planet2 = document.querySelector('#planet2m');
-var planet3 = document.querySelector('#planet3m');
-var star = document.querySelector('#starm');
-
-planet1.onclick = function(){planet1.style.display = "block";}
-planet1.onclick = function(event) {if (event.target == planet1) {planet1.style.display = "none";}}
-
-planet2.onclick = function(){planet2.style.display = "block";}
-window.onclick = function(event) {if (event.target == planet2) {planet2.style.display = "none";}}
-
-planet3.onclick = function(){planet3.style.display = "block";}
-window.onclick = function(event) {if (event.target == planet3) {planet3.style.display = "none";}}
-
-star.onclick = function(){star.style.display = "block";}
-window.onclick = function(event) {if (event.target == star) {star.style.display = "none";}}

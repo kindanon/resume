@@ -1,8 +1,8 @@
 /*
-hey man, don't look at another man's css ... we all do weird things to make it work
+hey friend, don't look at another man's css ... we all do weird things to make it work
 */
 
-/*others*/
+/*defaults*/
 body{
   background-color: rgba(33, 33, 33, 255);
   text-align: center;
@@ -12,7 +12,6 @@ ul {
   text-align: left;
   list-style-position: inside;
 }
-
 ::-webkit-scrollbar {width: .8rem;}
 ::-webkit-scrollbar-track {background: transparent;}
 ::-webkit-scrollbar-thumb {background: rgba(23, 23, 23, 255);}
@@ -80,50 +79,66 @@ ul {
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.99);
   box-shadow:         0px 0px 9px rgba(0, 0, 0, 0.99);
 }
-#star{background: linear-gradient(#d68b00, #fffc2e);}
+#star{   background: linear-gradient(#d68b00, #fffc2e);}
 #planet1{background: linear-gradient(#ab2eff, #ff00aa);}
 #planet2{background: linear-gradient(#0084ff, #00ff55);}
 #planet3{background: linear-gradient(#d30404, #ffbb00);}
-
-.stars{
-  background: linear-gradient(white, blue);
-}
 
 /*modals*/
 .modal-dialog{
   color: whitesmoke;
   text-align: center;
-  max-width: 80vw;
   margin: auto auto;
   pointer-events: all;
+
+/*TODO FIX CENTER WIDTH */
+  max-width: 95vw;
+/*
+  width: 98vw;
+  max-width: 50rem;
+ */
 }
+
+/*modal backgrounds*/
 .modal-content {
   border-radius: 50%;
-  width: 80vw;
-  height: 80vw;
+  width: 95vw;
+  height: 95vw;
   max-width: 50rem;
   max-height: 50rem;
   text-align: center;
   margin: auto auto;
   position: absolute;
 }
+#starm .modal-content{   background: linear-gradient(#6e4801, #868519);}
 #planet1m .modal-content{background: linear-gradient(#5d198a, #8b015d) !important;}
 #planet2m .modal-content{background: linear-gradient(#01498d, #018b2f) !important;}
 #planet3m .modal-content{background: linear-gradient(#8f0101, #788d01) !important;}
 
+/*modal text*/
 .modal-body{  
   text-align: center;
   padding: 0rem;
-  font-size: 14px;
-  max-height: 98vh;
+  max-height: 75vh;
   /*min-width: 98vw;*/
   overflow-y: scroll;
 }
-.modal-text{
-  text-align: left;
-  
+.modal-text{text-align: left;}
+/*modal others*/
+.modal-exit{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("exit.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: 10% 90%;
+  background-color: rgb(177.5, 0, 0);
+  border-radius: 50%;
+  opacity: 100;
 }
-
 .modal::-webkit-scrollbar {width: 0}
 .modal-text::-webkit-scrollbar {width: 0}
 .modal-body::-webkit-scrollbar {width: 0}
