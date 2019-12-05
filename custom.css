@@ -95,6 +95,7 @@ ul {
   text-align: center;
   max-width: 80vw;
   margin: auto auto;
+  pointer-events: all;
 }
 .modal-content {
   border-radius: 50%;
@@ -114,12 +115,15 @@ ul {
   text-align: center;
   padding: 0rem;
   font-size: 14px;
-  overflow-y: auto;
+  max-height: 98vh;
+  /*min-width: 98vw;*/
+  overflow-y: scroll;
 }
 .modal-text{
   text-align: left;
-  overflow-y: auto;
+  
 }
 
 .modal::-webkit-scrollbar {width: 0}
 .modal-text::-webkit-scrollbar {width: 0}
+.modal-body::-webkit-scrollbar {width: 0}
