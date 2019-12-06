@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- hello there -->
 <html>
+<!-- head -->
 <head>
 	<!-- BOOTSTRAP -->
 	<meta charset="utf-8">
@@ -13,7 +14,9 @@
 	<link rel="stylesheet" href="custom.css" />
 </head>
 
-<body><!-- home page --><div>
+<!-- body --><body>
+
+<!-- home page --><div>
 <div id="particles-js"></div>
 
 <text class="topTitle titleText">Welcome to my Galaxy</text>
@@ -26,25 +29,15 @@
     <div id="planet3" class="planets" data-toggle="modal" data-target="#planet3m"></div>
 
 	<svg class="orbitContainer" width="100%" height="100%" viewbox="0 0 100 100">
-		<defs>
-			<pattern id="image" height="100%" width="100%" viewBox="0 0 689 689">
-				<image xlink:href="planetSlime.png"/>
-			</pattern>
-		
-			<filter id="dropshadow" x="-2" y="-2" width="200" height="200">
-				<feGaussianBlur  stdDeviation="1"/>
-			</filter>
-		</defs>
-
 		<path id="orbit0" class="orbits" d="M 50,50 a 00,00 0 1,1 00,0 a 00,00 0 1,1 -00,0 Z"/>
 		<path id="orbit1" class="orbits" d="M 35,50 a 15,15 0 1,1 30,0 a 15,15 0 1,1 -30,0 Z"/>
 		<path id="orbit2" class="orbits" d="M 20,50 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0 Z"/>
-		<path id="orbit3" class="orbits" d="M 05,50 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0 Z"/>
+		<path id="orbit3" class="orbits" d="M 06,50 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0 Z"/>
 	</svg>
 </div>
 
 <text class="botTitle titleText">Touch the planets</text>
-</div><!-- end of home page -->
+</div>
 
 <!-- modals --><div>
 <div id="planet1m" class="modal fade" tabindex="-1" role="dialog">
@@ -136,7 +129,21 @@
 		<div class="modal-content"></div>
 		<div class="modal-body">
 			<div class="modal-text">
-				text
+				<h1>Contact Info</h1>
+				<h3>email :</h3>
+				<ul>
+				<li><a href="mailto:ethan.manarin@gmail.com">ethan.manarin@gmail.com</a></li>
+				</ul>
+				<h3>linkedIn :</h3>
+				<ul>
+				<li>&lt;HYPERLINK&gt;</li>
+				</ul>
+				<h3>gitHub :&nbsp;</h3>
+				<ul>
+				<li><a href="https://github.com/kindanon">https://github.com/kindanon</a></li>
+				</ul>
+
+				<h3>(dont forget the star)</h3>
 			</div>
 		</div>
 	</div>
@@ -148,17 +155,33 @@
 		<div class="modal-content"></div>
 		<div class="modal-body">
 			<div class="modal-text">
-				text
+				<h1>&nbsp;</h1>
+				<h1>Me</h1>
+				<div class="profile-pic"></div>
+				<h3>Self pitch</h3>
+				<p>I have a passion for learning new things...</p>
+				<h3>Interests</h3>
+				<ul>
+				<li>Huge space nerd</li>
+				<li>Data analysis on tweets</li>
+				<li>DnD (strength ranger)</li>
+				<li>Making toy programs</li>
+				<li>Something about dinosaurs</li>
+				</ul>
+				<h3>Goals</h3>
+				<ul>
+				<li>Create a proper videogame</li>
+				<li>Hike (some of) the great wall of china</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 </div>
-</div><!-- end of modals -->
+</div>
 
-<!-- scripts -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
+<!-- scripts --><div>
 <!-- BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
@@ -166,5 +189,6 @@
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" ></script>
 <script src="anime.min.js"></script>
 <script src="scripts.js"></script>
+</div>
 </body>
 </html>

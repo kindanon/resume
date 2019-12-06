@@ -1,5 +1,6 @@
 /*
-hey friend, don't look at another man's css ... we all do weird things to make it work
+hey friend, don't look at another man's css ... 
+we all do weird things to make it work
 */
 
 /*defaults*/
@@ -12,6 +13,9 @@ ul {
   text-align: left;
   list-style-position: inside;
 }
+a {
+  color: #89daff;
+  }
 ::-webkit-scrollbar {width: .8rem;}
 ::-webkit-scrollbar-track {background: transparent;}
 ::-webkit-scrollbar-thumb {background: rgba(23, 23, 23, 255);}
@@ -41,11 +45,18 @@ ul {
   display: block;
   font-weight:bold;
   -webkit-text-fill-color: transparent;
-	color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 	padding: 1rem;
   text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
+}
+@supports not (-webkit-background-clip: text){
+  .titleText{
+    color:  #9198e5;
+    -webkit-text-fill-color: #9198e5;
+    -webkit-background-clip: none;
+    background-clip: none;
+  }
 }
 .topTitle{font-size: 18vw;}
 .botTitle{font-size: 10vw;}
@@ -78,6 +89,7 @@ ul {
   -moz-box-shadow:    0px 0px 9px rgba(0, 0, 0, 0.99);
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.99);
   box-shadow:         0px 0px 9px rgba(0, 0, 0, 0.99);
+  cursor: pointer;
 }
 #star{   background: linear-gradient(#d68b00, #fffc2e);}
 #planet1{background: linear-gradient(#ab2eff, #ff00aa);}
@@ -135,6 +147,12 @@ ul {
   border-radius: 50%;
   opacity: 100;
   z-index: 10;
+}
+.profile-pic{
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-image: url("exit.png");
 }
 .modal::-webkit-scrollbar {width: 0}
 .modal-text::-webkit-scrollbar {width: 0}

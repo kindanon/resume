@@ -24,7 +24,6 @@ function orbits(orbit, planet, dura){
     system0 = orbits('orbit0', 'star', 1000);
     }
     
-
     document.querySelector('#planet1').onmouseover  = function(){system1.pause();}
     document.querySelector('#planet1').onmouseleave = function(){system1.play();}
 
