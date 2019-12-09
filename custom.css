@@ -30,8 +30,8 @@ a {color: #89daff;}
 .solarSystem{
   width: 98vw;
   height: 98vw;
-  max-width: 55rem;
-  max-height: 55rem;
+  max-width: 50rem;
+  max-height: 50rem;
   margin: 0 auto;
   position: relative;
 }
@@ -47,22 +47,7 @@ a {color: #89daff;}
 	background-clip: text;
 	padding: 1rem;
   text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
-}/*
-@supports not (-webkit-background-clip: text) or  not (background-clip: text){
-  .titleText{
-    background: none;
-    color:  #9198e5;
-    -webkit-text-fill-color: #9198e5;
-    -webkit-background-clip: none;
-    background-clip: none;
-  }
 }
-.topTitle{font-size: 18vw;}
-.botTitle{font-size: 10vw;}
-@media (min-width: 850px) {
-  .topTitle{font-size: 10rem;}
-  .botTitle{font-size: 5rem;}
-}*/
 
 /*orbit svgs*/
 .orbitContainer{
@@ -110,8 +95,8 @@ a {color: #89daff;}
   border-radius: 50%;
   width: 95vw;
   height: 95vw;
-  max-width: 55rem;
-  max-height: 55rem;
+  max-width: 85vh;
+  max-height: 85vh;
   position: absolute;
   display: block;
   padding-right: 0;
@@ -125,8 +110,9 @@ a {color: #89daff;}
 .modal-body{  
   text-align: center;
   padding: 0rem;
-  margin-top: 4rem;
-  max-height: 80vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  max-height: calc(90vh - 10rem);
   overflow-y: scroll;
 }
 .modal-text{text-align: left;}
