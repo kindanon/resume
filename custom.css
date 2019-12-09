@@ -13,17 +13,15 @@ ul {
   text-align: left;
   list-style-position: inside;
 }
-a {
-  color: #89daff;
-  }
+a {color: #89daff;}
 ::-webkit-scrollbar {width: .8rem;}
 ::-webkit-scrollbar-track {background: transparent;}
 ::-webkit-scrollbar-thumb {background: rgba(23, 23, 23, 255);}
 ::-webkit-scrollbar-thumb:hover {background: #555;}
 
 #particles-js {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: -10;
 }
@@ -41,7 +39,7 @@ a {
 /*main text*/
 .titleText{
 	font-family: 'Dancing Script', cursive;
-  background-image: linear-gradient(135deg, #e66465, #9198e5);
+  background: linear-gradient(135deg, #e66465, #9198e5);
   display: block;
   font-weight:bold;
   -webkit-text-fill-color: transparent;
@@ -49,9 +47,10 @@ a {
 	background-clip: text;
 	padding: 1rem;
   text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
-}
-@supports not (-webkit-background-clip: text){
+}/*
+@supports not (-webkit-background-clip: text) or  not (background-clip: text){
   .titleText{
+    background: none;
     color:  #9198e5;
     -webkit-text-fill-color: #9198e5;
     -webkit-background-clip: none;
@@ -63,7 +62,7 @@ a {
 @media (min-width: 850px) {
   .topTitle{font-size: 10rem;}
   .botTitle{font-size: 5rem;}
-}
+}*/
 
 /*orbit svgs*/
 .orbitContainer{
@@ -118,15 +117,15 @@ a {
   padding-right: 0;
 }
 #starm .modal-content{   background: linear-gradient(#6e4801, #868519);}
-#planet1m .modal-content{background: linear-gradient(#5d198a, #8b015d) !important;}
-#planet2m .modal-content{background: linear-gradient(#01498d, #018b2f) !important;}
-#planet3m .modal-content{background: linear-gradient(#8f0101, #788d01) !important;}
+#planet1m .modal-content{background: linear-gradient(#5d198a, #8b015d);}
+#planet2m .modal-content{background: linear-gradient(#01498d, #018b2f);}
+#planet3m .modal-content{background: linear-gradient(#8f0101, #788d01);}
 
 /*modal text*/
 .modal-body{  
   text-align: center;
   padding: 0rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
   max-height: 80vh;
   overflow-y: scroll;
 }
@@ -135,10 +134,10 @@ a {
 /*modal others*/
 .modal-exit{
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 5rem;
-  height: 5rem;
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
   background-image: url("exit.png");
   background-size: 85%;
   background-repeat: no-repeat;
