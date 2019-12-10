@@ -64,8 +64,8 @@ a {color: #89daff;}
 }
 .orbits{
 	stroke: grey;
-  stroke-dasharray: .25,1;
-  stroke-width: .02em;
+  stroke-dasharray: .5,1;
+  stroke-width: .012rem;
   fill: none;
 }
 
@@ -118,11 +118,11 @@ a {color: #89daff;}
   text-align: center;
   padding: 0rem;
   margin-top: 5rem;
-  margin-bottom: 5rem;
-  max-height: calc(90vh - 10rem);
+  margin-bottom: 2.5rem;
+  max-height: calc(92vh - 7.5rem);
   overflow-y: scroll;
 }
-.modal-text{text-align: left;}
+.modal-text{text-align: left; }
 
 /*modal others*/
 .modal-exit{
@@ -142,8 +142,8 @@ a {color: #89daff;}
 }
 .profile-pic{
   border-radius: 50%;
-  width: 25vw;
-  height: 25vw;
+  width: 20rem;
+  height: 20rem;
   background-image: url("profile-crc.png");
   background-size: contain;
 }
