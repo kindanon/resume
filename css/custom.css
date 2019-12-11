@@ -108,10 +108,10 @@ a {color: #89daff;}
   display: block;
   padding-right: 0;
 }
-#starm .modal-content{   background: linear-gradient(#6e4801, #868519);}
-#planet1m .modal-content{background: linear-gradient(#5d198a, #8b015d);}
-#planet2m .modal-content{background: linear-gradient(#01498d, #018b2f);}
-#planet3m .modal-content{background: linear-gradient(#8f0101, #788d01);}
+#starm .modal-content{   background: linear-gradient(#684300, #818018);}
+#planet1m .modal-content{background: linear-gradient(#451366, #6b0148);}
+#planet2m .modal-content{background: linear-gradient(#003363, #006823);}
+#planet3m .modal-content{background: linear-gradient(#630202, #664b01);}
 
 /*modal text*/
 .modal-body{  
@@ -131,7 +131,7 @@ a {color: #89daff;}
   right: 1rem;
   width: 4rem;
   height: 4rem;
-  background-image: url("/resources/exit.png");
+  background-image: url("../resources/exit.png");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: 10% 90%;
@@ -144,7 +144,7 @@ a {color: #89daff;}
   border-radius: 50%;
   width: 20rem;
   height: 20rem;
-  background-image: url("/resources/profile.png");
+  background-image: url("../resources/profile.png");
   background-size: contain;
 }
 .modal::-webkit-scrollbar {width: 0}
